@@ -14,7 +14,7 @@ const App = () => {
   const appID = "41fafc63a2ab41fcb5e9fb3b24e64ad1";
   //// Your token
   options.token =
-    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IAAF691Y3geEklw1ezDyJs+IFo3FFU9hGzVbvEFYC9XuQ6whLsMAAAAAEAB0tiNFc6+9YAEA6ANzr71g";
+    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IABP7nXLgwc89GO1nexIVB/dVi3VHolbrbby8JxEAucIo6whLsMAAAAAEABamO4x+3PHYAEA6AP7c8dg";
   ////app.certificate = "5163128debde47929cc70fbd0902b008"
 
   //// Initialize client
