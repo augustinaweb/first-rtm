@@ -6,15 +6,15 @@ import AgoraRTM from "agora-rtm-sdk";
 const App = () => {
   /// Params for login
   let options = {
-    uid: "",
-    token: "",
+    uid: "baba",
+    token: "00641fafc63a2ab41fcb5e9fb3b24e64ad1IADwWOHho5YdXPeOnJwXnW5++lv7ED+8kFiDM8giY9QY2KwhLsMAAAAAEACKAV218GLTYAEA6APwYtNg",
   };
 
   //// Your app ID
   const appID = "41fafc63a2ab41fcb5e9fb3b24e64ad1";
   //// Your token
   options.token =
-    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IABP7nXLgwc89GO1nexIVB/dVi3VHolbrbby8JxEAucIo6whLsMAAAAAEABamO4x+3PHYAEA6AP7c8dg";
+    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IADwWOHho5YdXPeOnJwXnW5++lv7ED+8kFiDM8giY9QY2KwhLsMAAAAAEACKAV218GLTYAEA6APwYtNg";
   ////app.certificate = "5163128debde47929cc70fbd0902b008"
 
   //// Initialize client
