@@ -1,24 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import AgoraRTM from "agora-rtm-sdk";
 
 const App = () => {
-  /// Params for login
   let options = {
-    uid: "baba",
-    token: "00641fafc63a2ab41fcb5e9fb3b24e64ad1IADwWOHho5YdXPeOnJwXnW5++lv7ED+8kFiDM8giY9QY2KwhLsMAAAAAEACKAV218GLTYAEA6APwYtNg",
+    uid: "",
+    token: "",
   };
 
-  //// Your app ID
   const appID = "41fafc63a2ab41fcb5e9fb3b24e64ad1";
-  //// Your token
   options.token =
-    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IADwWOHho5YdXPeOnJwXnW5++lv7ED+8kFiDM8giY9QY2KwhLsMAAAAAEACKAV218GLTYAEA6APwYtNg";
+    "00641fafc63a2ab41fcb5e9fb3b24e64ad1IAALXLe7fcPq4cF3haiE+G84Ivh/nzhSnfIqiUPNFR+C9gx+f9gAAAAAEABBR+Ee4sDtYAEA6APiwO1g";
   ////app.certificate = "5163128debde47929cc70fbd0902b008"
 
   //// Initialize client
-  const client = AgoraRTM.createInstance(appID);
+  const client = AgoraRTM.createInstance(`${appID}`, {
+    enableLogUpload: false,
+  });
 
   //// Client Event listeners
   // Display messages from peer
@@ -72,6 +70,7 @@ const App = () => {
         options.uid = (
           document.getElementById("userID") as HTMLInputElement
         )?.value.toString();
+        console.log("login");
         await client.login(options);
       };
     }
@@ -174,6 +173,14 @@ const App = () => {
     }
   };
 
+  //const login = async () => {
+  //  console.log("login");
+  //  options.uid = (
+  //    document.getElementById("userID") as HTMLInputElement
+  //  )?.value.toString();
+  //  await client.login(options);
+  //};
+
   return (
     <>
       <h2 className="left-align">RTM Quickstart</h2>
@@ -194,6 +201,7 @@ const App = () => {
               <div className="row">
                 <div>
                   <button type="button" id="login">
+                    {/*<button type="button" id="login" onClick={login}>*/}
                     LOGIN
                   </button>
                   <button type="button" id="logout">

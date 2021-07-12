@@ -15,3 +15,6 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//"build": "react-app-rewired build --scripts-version react-scripts",
+//    "start": "react-app-rewired start --scripts-version react-scripts",
